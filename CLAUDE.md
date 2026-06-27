@@ -42,3 +42,7 @@ All copy (job titles, bullet points, dates, contact info) is co-located in each 
 
 Subject is **Reslyn Dequito** — Licensed Professional Teacher / ESL Educator based in Cebu City, Philippines.  
 Contact: aera191421@gmail.com · +63 966 483 3781.
+
+## Deployment
+
+GitHub Pages via GitHub Actions (`.github/workflows/deploy.yml`). Pushes to `main` trigger automatic deployment with `--base-href /portfolio/`.
