@@ -29,15 +29,15 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <section className="py-20 bg-indigo-950">
+    <section className="py-20 bg-emerald-950">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <FadeIn className="text-center mb-16">
           <div className="flex items-center justify-center gap-3 mb-4">
-            <div className="w-8 h-px bg-emerald-400" />
-            <span className="text-emerald-400 text-sm font-medium tracking-widest uppercase">
+            <div className="w-8 h-px bg-amber-400" />
+            <span className="text-amber-400 text-sm font-medium tracking-widest uppercase">
               What Others Say
             </span>
-            <div className="w-8 h-px bg-emerald-400" />
+            <div className="w-8 h-px bg-amber-400" />
           </div>
           <h2 className="text-3xl sm:text-4xl font-bold text-white">Testimonials</h2>
         </FadeIn>
@@ -45,22 +45,22 @@ export default function Testimonials() {
         <div className="grid md:grid-cols-3 gap-6">
           {testimonials.map((t, i) => (
             <FadeIn key={t.name} delay={i * 0.1}>
-              <div className="bg-indigo-900 rounded-2xl p-7 border border-indigo-800 flex flex-col h-full">
+              <div className="bg-emerald-900 rounded-2xl p-7 border border-emerald-800 flex flex-col h-full">
                 <div className="flex gap-0.5 mb-5">
                   {Array.from({ length: t.rating }).map((_, j) => (
-                    <span key={j} className="text-emerald-400 text-base">★</span>
+                    <span key={j} className="text-amber-400 text-base">★</span>
                   ))}
                 </div>
-                <p className="text-indigo-100 text-sm leading-relaxed mb-6 flex-1 italic">
+                <p className="text-emerald-100 text-sm leading-relaxed mb-6 flex-1 italic">
                   &ldquo;{t.quote}&rdquo;
                 </p>
-                <div className="border-t border-indigo-800 pt-4 flex items-center gap-3">
-                  <div className="w-10 h-10 bg-emerald-500/20 rounded-full flex items-center justify-center text-emerald-400 font-bold text-sm shrink-0">
+                <div className="border-t border-emerald-800 pt-4 flex items-center gap-3">
+                  <div className="w-10 h-10 bg-amber-500/20 rounded-full flex items-center justify-center text-amber-400 font-bold text-sm shrink-0">
                     {t.name[0]}
                   </div>
                   <div>
                     <p className="text-white font-semibold text-sm">{t.name}</p>
-                    <p className="text-indigo-400 text-xs">
+                    <p className="text-emerald-400 text-xs">
                       {t.role} &middot; {t.origin}
                     </p>
                   </div>
@@ -71,7 +71,7 @@ export default function Testimonials() {
         </div>
 
         <FadeIn className="text-center mt-10">
-          <p className="text-indigo-600 text-xs italic">
+          <p className="text-emerald-700 text-xs italic">
             References available upon request.
           </p>
         </FadeIn>

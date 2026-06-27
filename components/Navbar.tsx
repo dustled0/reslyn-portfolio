@@ -22,13 +22,13 @@ export default function Navbar() {
   return (
     <nav
       className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        scrolled ? "bg-indigo-950/95 backdrop-blur-sm shadow-lg" : "bg-transparent"
+        scrolled ? "bg-emerald-950/95 backdrop-blur-sm shadow-lg" : "bg-transparent"
       }`}
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <a href="#" className="text-white font-bold text-lg">
-            Reslyn <span className="text-emerald-400">Dequito</span>
+            Reslyn <span className="text-amber-400">Dequito</span>
           </a>
 
           {/* Desktop nav */}
@@ -37,14 +37,14 @@ export default function Navbar() {
               <a
                 key={link.href}
                 href={link.href}
-                className="text-indigo-200 hover:text-emerald-400 transition-colors text-sm font-medium"
+                className="text-emerald-200 hover:text-amber-400 transition-colors text-sm font-medium"
               >
                 {link.label}
               </a>
             ))}
             <a
               href="#contact"
-              className="bg-emerald-500 hover:bg-emerald-400 text-white font-semibold px-4 py-2 rounded-lg text-sm transition-colors"
+              className="bg-amber-500 hover:bg-amber-400 text-white font-semibold px-4 py-2 rounded-lg text-sm transition-colors"
             >
               Hire Me
             </a>
@@ -64,12 +64,12 @@ export default function Navbar() {
 
         {/* Mobile menu */}
         {menuOpen && (
-          <div className="md:hidden bg-indigo-900 rounded-lg mb-4 py-2">
+          <div className="md:hidden bg-emerald-900 rounded-lg mb-4 py-2">
             {navLinks.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
-                className="block px-4 py-2.5 text-indigo-200 hover:text-emerald-400 hover:bg-indigo-800 transition-colors text-sm"
+                className="block px-4 py-2.5 text-emerald-200 hover:text-amber-400 hover:bg-emerald-800 transition-colors text-sm"
                 onClick={() => setMenuOpen(false)}
               >
                 {link.label}
@@ -78,7 +78,7 @@ export default function Navbar() {
             <div className="px-4 pt-2 pb-1">
               <a
                 href="#contact"
-                className="block text-center bg-emerald-500 hover:bg-emerald-400 text-white font-semibold px-4 py-2 rounded-lg text-sm transition-colors"
+                className="block text-center bg-amber-500 hover:bg-amber-400 text-white font-semibold px-4 py-2 rounded-lg text-sm transition-colors"
                 onClick={() => setMenuOpen(false)}
               >
                 Hire Me

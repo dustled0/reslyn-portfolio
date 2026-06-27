@@ -23,8 +23,8 @@ const contacts = [
     label: "Email",
     value: "aera191421@gmail.com",
     href: "mailto:aera191421@gmail.com",
-    hoverColor: "hover:border-emerald-500",
-    iconColor: "text-emerald-400",
+    hoverColor: "hover:border-amber-500",
+    iconColor: "text-amber-400",
     badge: null,
     external: false,
   },
@@ -33,8 +33,8 @@ const contacts = [
     label: "Phone",
     value: "+63 966 483 3781",
     href: "tel:+639664833781",
-    hoverColor: "hover:border-indigo-500",
-    iconColor: "text-indigo-300",
+    hoverColor: "hover:border-emerald-700",
+    iconColor: "text-emerald-300",
     badge: null,
     external: false,
   },
@@ -59,26 +59,26 @@ const profiles = [
         <path d="M18.561 13.158c-1.102 0-2.135-.467-3.074-1.227l.228-1.076.008-.042c.207-1.143.849-3.06 2.839-3.06 1.492 0 2.703 1.212 2.703 2.703-.001 1.489-1.212 2.702-2.704 2.702zm0-8.14c-2.539 0-4.51 1.649-5.31 4.366-1.22-1.834-2.148-4.036-2.687-5.892H7.828v7.112c-.002 1.406-1.141 2.546-2.547 2.546-1.405 0-2.543-1.14-2.545-2.546V3.492H0v7.112c0 2.914 2.37 5.303 5.281 5.303 2.913 0 5.283-2.389 5.283-5.303v-1.19c.529 1.107 1.182 2.229 1.974 3.221l-1.673 7.873h2.797l1.213-5.71c1.063.679 2.285 1.109 3.686 1.109 3 0 5.439-2.452 5.439-5.45 0-3-2.439-5.439-5.439-5.439z" />
       </svg>
     ),
-    color: "hover:bg-emerald-600",
+    color: "hover:bg-amber-600",
   },
 ];
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-20 bg-indigo-950">
+    <section id="contact" className="py-20 bg-emerald-950">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <FadeIn className="text-center mb-16">
           <div className="flex items-center justify-center gap-3 mb-4">
-            <div className="w-8 h-px bg-emerald-400" />
-            <span className="text-emerald-400 text-sm font-medium tracking-widest uppercase">
+            <div className="w-8 h-px bg-amber-400" />
+            <span className="text-amber-400 text-sm font-medium tracking-widest uppercase">
               Get In Touch
             </span>
-            <div className="w-8 h-px bg-emerald-400" />
+            <div className="w-8 h-px bg-amber-400" />
           </div>
           <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
             Let&apos;s Work Together
           </h2>
-          <p className="text-indigo-300 max-w-xl mx-auto">
+          <p className="text-emerald-300 max-w-xl mx-auto">
             I&apos;m open to ESL teaching roles, customer service positions, and remote
             opportunities. Feel free to reach out via any channel below.
           </p>
@@ -92,7 +92,7 @@ export default function Contact() {
                   href={c.href}
                   target={c.external ? "_blank" : undefined}
                   rel={c.external ? "noopener noreferrer" : undefined}
-                  className={`relative bg-indigo-900 border border-indigo-800 ${c.hoverColor} rounded-2xl p-6 text-center transition-all group flex flex-col items-center h-full`}
+                  className={`relative bg-emerald-900 border border-emerald-800 ${c.hoverColor} rounded-2xl p-6 text-center transition-all group flex flex-col items-center h-full`}
                 >
                   {c.badge && (
                     <span className="absolute -top-2.5 left-1/2 -translate-x-1/2 bg-green-500 text-white text-xs font-bold px-3 py-0.5 rounded-full whitespace-nowrap">
@@ -100,8 +100,8 @@ export default function Contact() {
                     </span>
                   )}
                   <div className={`mb-3 ${c.iconColor}`}>{c.icon}</div>
-                  <div className="text-indigo-500 text-xs mb-1">{c.label}</div>
-                  <div className="text-white text-sm font-medium group-hover:text-emerald-400 transition-colors break-all">
+                  <div className="text-emerald-500 text-xs mb-1">{c.label}</div>
+                  <div className="text-white text-sm font-medium group-hover:text-amber-400 transition-colors break-all">
                     {c.value}
                   </div>
                 </a>
@@ -130,7 +130,7 @@ export default function Contact() {
                 href={p.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={`flex items-center gap-2 bg-indigo-900 ${p.color} border border-indigo-800 text-indigo-200 hover:text-white font-medium px-5 py-2.5 rounded-xl text-sm transition-all`}
+                className={`flex items-center gap-2 bg-emerald-900 ${p.color} border border-emerald-800 text-emerald-200 hover:text-white font-medium px-5 py-2.5 rounded-xl text-sm transition-all`}
               >
                 {p.icon}
                 {p.label}
