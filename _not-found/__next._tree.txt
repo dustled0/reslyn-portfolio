@@ -1,2 +1,2 @@
-:HL["/reslyn-portfolio/_next/static/chunks/0y6s8y9gi7qqy.css","style"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"/_not-found","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"Ex81q9HAzgkt4AfSgpSYM"}
+:HL["/reslyn-portfolio/_next/static/chunks/0xupq9n4hq33x.css","style"]
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"/_not-found","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"cXzY_3xQrIAwv2YqjjfV_"}
