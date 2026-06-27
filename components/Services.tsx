@@ -44,19 +44,19 @@ const services = [
 
 export default function Services() {
   return (
-    <section id="services" className="py-20 bg-slate-50">
+    <section id="services" className="py-20 bg-gray-50">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <FadeIn className="text-center mb-16">
           <div className="flex items-center justify-center gap-3 mb-4">
-            <div className="w-8 h-px bg-amber-500" />
-            <span className="text-amber-500 text-sm font-medium tracking-widest uppercase">
+            <div className="w-8 h-px bg-emerald-500" />
+            <span className="text-emerald-600 text-sm font-medium tracking-widest uppercase">
               What I Offer
             </span>
-            <div className="w-8 h-px bg-amber-500" />
+            <div className="w-8 h-px bg-emerald-500" />
           </div>
-          <h2 className="text-3xl sm:text-4xl font-bold text-slate-900">Services &amp; Rates</h2>
-          <p className="text-slate-500 mt-3 max-w-xl mx-auto">
-            Flexible remote services available across US, UK, and AU time zones.
+          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">Services &amp; Rates</h2>
+          <p className="text-gray-500 mt-3 max-w-xl mx-auto">
+            Flexible remote services available across US, Japan, and AU time zones.
           </p>
         </FadeIn>
 
@@ -66,26 +66,26 @@ export default function Services() {
               <div
                 className={`rounded-2xl p-7 flex flex-col h-full transition-all hover:shadow-md ${
                   svc.highlight
-                    ? "bg-slate-900 border border-amber-500/30 ring-1 ring-amber-500/20"
-                    : "bg-white border border-slate-200 hover:border-amber-300"
+                    ? "bg-indigo-950 border border-emerald-500/30 ring-1 ring-emerald-500/20"
+                    : "bg-white border border-gray-200 hover:border-emerald-300"
                 }`}
               >
                 {svc.highlight && (
-                  <span className="inline-block bg-amber-500 text-slate-900 text-xs font-bold px-3 py-1 rounded-full mb-4 w-fit">
+                  <span className="inline-block bg-emerald-500 text-white text-xs font-bold px-3 py-1 rounded-full mb-4 w-fit">
                     Most Requested
                   </span>
                 )}
                 <div className="text-4xl mb-4">{svc.icon}</div>
                 <h3
                   className={`font-bold text-xl mb-2 ${
-                    svc.highlight ? "text-white" : "text-slate-900"
+                    svc.highlight ? "text-white" : "text-gray-900"
                   }`}
                 >
                   {svc.title}
                 </h3>
                 <p
                   className={`text-sm mb-5 leading-relaxed ${
-                    svc.highlight ? "text-slate-400" : "text-slate-500"
+                    svc.highlight ? "text-indigo-300" : "text-gray-500"
                   }`}
                 >
                   {svc.desc}
@@ -95,31 +95,31 @@ export default function Services() {
                     <li
                       key={f}
                       className={`flex items-start gap-2 text-sm ${
-                        svc.highlight ? "text-slate-300" : "text-slate-600"
+                        svc.highlight ? "text-indigo-200" : "text-gray-600"
                       }`}
                     >
-                      <span className="text-amber-500 mt-0.5 shrink-0">✓</span>
+                      <span className="text-emerald-500 mt-0.5 shrink-0">✓</span>
                       {f}
                     </li>
                   ))}
                 </ul>
                 <div
                   className={`border-t pt-4 flex items-center justify-between ${
-                    svc.highlight ? "border-slate-700" : "border-slate-200"
+                    svc.highlight ? "border-indigo-800" : "border-gray-200"
                   }`}
                 >
                   <div>
-                    <p className={`text-xs mb-0.5 ${svc.highlight ? "text-slate-500" : "text-slate-400"}`}>
+                    <p className={`text-xs mb-0.5 ${svc.highlight ? "text-indigo-400" : "text-gray-400"}`}>
                       Starting rate
                     </p>
-                    <p className="text-xl font-bold text-amber-500">{svc.rate}</p>
+                    <p className="text-xl font-bold text-emerald-500">{svc.rate}</p>
                   </div>
                   <a
                     href="#contact"
                     className={`font-semibold px-4 py-2 rounded-lg text-sm transition-all ${
                       svc.highlight
-                        ? "bg-amber-500 hover:bg-amber-400 text-slate-900"
-                        : "bg-slate-900 hover:bg-amber-500 text-white hover:text-slate-900"
+                        ? "bg-emerald-500 hover:bg-emerald-400 text-white"
+                        : "bg-indigo-950 hover:bg-emerald-500 text-white"
                     }`}
                   >
                     Get in Touch

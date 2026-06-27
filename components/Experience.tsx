@@ -6,7 +6,6 @@ const experiences = [
     company: "Teleperformance",
     period: "Aug 2024 – Sep 2025",
     type: "Customer Service",
-    color: "bg-blue-100 text-blue-700",
     points: [
       "Assisted customers with login, billing, and order concerns through email support",
       "Maintained accurate records and professional communication across all interactions",
@@ -17,7 +16,6 @@ const experiences = [
     company: "QQ English",
     period: "Jun 2023 – Jul 2024",
     type: "Education",
-    color: "bg-green-100 text-green-700",
     points: [
       "Conducted one-on-one online English lessons for students aged 5 to 70 years old",
       "Taught students from Korea, Japan, Vietnam, Taiwan, Mongolia, and other Asian countries",
@@ -30,7 +28,6 @@ const experiences = [
     company: "96 Group Back Office",
     period: "Nov 2022 – May 2023",
     type: "Finance",
-    color: "bg-purple-100 text-purple-700",
     points: [
       "Processed payment-related transactions and maintained accurate records",
       "Coordinated with team members to complete daily tasks efficiently",
@@ -41,7 +38,6 @@ const experiences = [
     company: "Cebu Toyo Corporation",
     period: "May 2014 – Oct 2015",
     type: "Manufacturing",
-    color: "bg-orange-100 text-orange-700",
     points: [
       "Operated automatic and manual machines in a fast-paced production environment",
       "Maintained product quality and followed company safety procedures",
@@ -56,17 +52,17 @@ export default function Experience() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <FadeIn className="text-center mb-16">
           <div className="flex items-center justify-center gap-3 mb-4">
-            <div className="w-8 h-px bg-amber-500" />
-            <span className="text-amber-500 text-sm font-medium tracking-widest uppercase">
+            <div className="w-8 h-px bg-emerald-500" />
+            <span className="text-emerald-600 text-sm font-medium tracking-widest uppercase">
               Work History
             </span>
-            <div className="w-8 h-px bg-amber-500" />
+            <div className="w-8 h-px bg-emerald-500" />
           </div>
-          <h2 className="text-3xl sm:text-4xl font-bold text-slate-900">Professional Experience</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">Professional Experience</h2>
         </FadeIn>
 
         <div className="relative">
-          <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-px bg-slate-200 md:-translate-x-1/2" />
+          <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-px bg-indigo-100 md:-translate-x-1/2" />
 
           <div className="space-y-10">
             {experiences.map((exp, i) => (
@@ -76,34 +72,32 @@ export default function Experience() {
                     i % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
                   }`}
                 >
-                  <div className="absolute left-4 md:left-1/2 w-3 h-3 bg-amber-500 rounded-full md:-translate-x-1/2 top-6 z-10 ring-4 ring-white" />
+                  <div className="absolute left-4 md:left-1/2 w-3 h-3 bg-emerald-500 rounded-full md:-translate-x-1/2 top-6 z-10 ring-4 ring-white" />
 
                   <div
                     className={`ml-10 md:ml-0 md:w-1/2 ${
                       i % 2 === 0 ? "md:pr-14" : "md:pl-14"
                     }`}
                   >
-                    <div className="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
+                    <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-200 hover:border-emerald-200 hover:shadow-md transition-all">
                       <div className="flex items-start justify-between flex-wrap gap-3 mb-4">
                         <div>
-                          <h3 className="font-bold text-slate-900 text-lg leading-tight">
+                          <h3 className="font-bold text-gray-900 text-lg leading-tight">
                             {exp.role}
                           </h3>
-                          <p className="text-amber-600 font-medium mt-0.5">{exp.company}</p>
+                          <p className="text-emerald-600 font-medium mt-0.5">{exp.company}</p>
                         </div>
                         <div className="text-right shrink-0">
-                          <p className="text-slate-500 text-sm">{exp.period}</p>
-                          <span
-                            className={`inline-block mt-1 text-xs font-semibold px-2.5 py-0.5 rounded-full ${exp.color}`}
-                          >
+                          <p className="text-gray-400 text-sm">{exp.period}</p>
+                          <span className="inline-block mt-1 text-xs font-semibold px-2.5 py-0.5 rounded-full bg-indigo-50 text-indigo-700">
                             {exp.type}
                           </span>
                         </div>
                       </div>
                       <ul className="space-y-2">
                         {exp.points.map((point, j) => (
-                          <li key={j} className="flex items-start gap-2 text-slate-600 text-sm">
-                            <span className="text-amber-500 mt-1 shrink-0 text-xs">●</span>
+                          <li key={j} className="flex items-start gap-2 text-gray-600 text-sm">
+                            <span className="text-emerald-500 mt-1 shrink-0 text-xs">●</span>
                             {point}
                           </li>
                         ))}

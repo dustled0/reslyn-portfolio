@@ -29,18 +29,18 @@ const setup = [
 
 export default function RemoteWork() {
   return (
-    <section className="py-20 bg-slate-50">
+    <section className="py-20 bg-gray-50">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <FadeIn className="text-center mb-16">
           <div className="flex items-center justify-center gap-3 mb-4">
-            <div className="w-8 h-px bg-amber-500" />
-            <span className="text-amber-500 text-sm font-medium tracking-widest uppercase">
+            <div className="w-8 h-px bg-emerald-500" />
+            <span className="text-emerald-600 text-sm font-medium tracking-widest uppercase">
               My Setup
             </span>
-            <div className="w-8 h-px bg-amber-500" />
+            <div className="w-8 h-px bg-emerald-500" />
           </div>
-          <h2 className="text-3xl sm:text-4xl font-bold text-slate-900">Remote Work Ready</h2>
-          <p className="text-slate-500 mt-3 max-w-xl mx-auto">
+          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">Remote Work Ready</h2>
+          <p className="text-gray-500 mt-3 max-w-xl mx-auto">
             Fully equipped for remote work with a reliable setup and flexible availability across
             multiple time zones.
           </p>
@@ -49,11 +49,11 @@ export default function RemoteWork() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {setup.map((item, i) => (
             <FadeIn key={item.title} delay={i * 0.08}>
-              <div className="bg-white rounded-2xl p-6 text-center shadow-sm border border-slate-100 h-full">
+              <div className="bg-white rounded-2xl p-6 text-center shadow-sm border border-gray-200 hover:border-emerald-200 hover:shadow-md transition-all h-full">
                 <div className="text-4xl mb-4">{item.icon}</div>
-                <h3 className="font-bold text-slate-900 mb-2">{item.title}</h3>
-                <p className="text-slate-700 text-sm font-medium mb-1">{item.detail}</p>
-                <p className="text-slate-400 text-xs">{item.sub}</p>
+                <h3 className="font-bold text-gray-900 mb-2">{item.title}</h3>
+                <p className="text-gray-700 text-sm font-medium mb-1">{item.detail}</p>
+                <p className="text-gray-400 text-xs">{item.sub}</p>
               </div>
             </FadeIn>
           ))}

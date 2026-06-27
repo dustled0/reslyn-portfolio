@@ -37,11 +37,11 @@ const links = [
 
 export default function Footer() {
   return (
-    <footer className="bg-slate-950 py-10 border-t border-slate-800">
+    <footer className="bg-indigo-950 py-10 border-t border-indigo-900">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col items-center gap-6">
           <p className="text-white font-bold text-lg">
-            Reslyn <span className="text-amber-400">Dequito</span>
+            Reslyn <span className="text-emerald-400">Dequito</span>
           </p>
 
           <div className="flex flex-wrap justify-center gap-4">
@@ -51,7 +51,7 @@ export default function Footer() {
                 href={l.href}
                 target={l.href.startsWith("http") ? "_blank" : undefined}
                 rel={l.href.startsWith("http") ? "noopener noreferrer" : undefined}
-                className="flex items-center gap-1.5 text-slate-500 hover:text-slate-300 transition-colors text-sm"
+                className="flex items-center gap-1.5 text-indigo-500 hover:text-indigo-200 transition-colors text-sm"
               >
                 {l.icon}
                 {l.label}
@@ -59,7 +59,7 @@ export default function Footer() {
             ))}
           </div>
 
-          <p className="text-slate-600 text-sm text-center">
+          <p className="text-indigo-700 text-sm text-center">
             © 2026 Reslyn Dequito &nbsp;·&nbsp; Licensed Professional Teacher &nbsp;·&nbsp; Cebu
             City, Philippines
           </p>
