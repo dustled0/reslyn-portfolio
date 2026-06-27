@@ -22,13 +22,13 @@ export default function Navbar() {
   return (
     <nav
       className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        scrolled ? "bg-emerald-950/95 backdrop-blur-sm shadow-lg" : "bg-transparent"
+        scrolled ? "bg-white/95 backdrop-blur-sm shadow-sm border-b border-stone-100" : "bg-transparent"
       }`}
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <a href="#" className="text-white font-bold text-lg">
-            Reslyn <span className="text-amber-400">Dequito</span>
+          <a href="#" className="text-stone-900 font-bold text-lg">
+            Reslyn <span className="text-rose-500">Dequito</span>
           </a>
 
           {/* Desktop nav */}
@@ -37,14 +37,14 @@ export default function Navbar() {
               <a
                 key={link.href}
                 href={link.href}
-                className="text-emerald-200 hover:text-amber-400 transition-colors text-sm font-medium"
+                className="text-stone-600 hover:text-rose-500 transition-colors text-sm font-medium"
               >
                 {link.label}
               </a>
             ))}
             <a
               href="#contact"
-              className="bg-amber-500 hover:bg-amber-400 text-white font-semibold px-4 py-2 rounded-lg text-sm transition-colors"
+              className="bg-rose-500 hover:bg-rose-400 text-white font-semibold px-4 py-2 rounded-lg text-sm transition-colors"
             >
               Hire Me
             </a>
@@ -52,7 +52,7 @@ export default function Navbar() {
 
           {/* Mobile menu button */}
           <button
-            className="md:hidden text-white p-2 flex flex-col gap-1"
+            className="md:hidden text-stone-700 p-2 flex flex-col gap-1"
             onClick={() => setMenuOpen(!menuOpen)}
             aria-label="Toggle menu"
           >
@@ -64,12 +64,12 @@ export default function Navbar() {
 
         {/* Mobile menu */}
         {menuOpen && (
-          <div className="md:hidden bg-emerald-900 rounded-lg mb-4 py-2">
+          <div className="md:hidden bg-white rounded-lg mb-4 py-2 shadow-lg border border-stone-100">
             {navLinks.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
-                className="block px-4 py-2.5 text-emerald-200 hover:text-amber-400 hover:bg-emerald-800 transition-colors text-sm"
+                className="block px-4 py-2.5 text-stone-600 hover:text-rose-500 hover:bg-rose-50 transition-colors text-sm"
                 onClick={() => setMenuOpen(false)}
               >
                 {link.label}
@@ -78,7 +78,7 @@ export default function Navbar() {
             <div className="px-4 pt-2 pb-1">
               <a
                 href="#contact"
-                className="block text-center bg-amber-500 hover:bg-amber-400 text-white font-semibold px-4 py-2 rounded-lg text-sm transition-colors"
+                className="block text-center bg-rose-500 hover:bg-rose-400 text-white font-semibold px-4 py-2 rounded-lg text-sm transition-colors"
                 onClick={() => setMenuOpen(false)}
               >
                 Hire Me

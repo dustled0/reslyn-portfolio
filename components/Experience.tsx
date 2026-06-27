@@ -52,17 +52,17 @@ export default function Experience() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <FadeIn className="text-center mb-16">
           <div className="flex items-center justify-center gap-3 mb-4">
-            <div className="w-8 h-px bg-amber-500" />
-            <span className="text-amber-600 text-sm font-medium tracking-widest uppercase">
+            <div className="w-8 h-px bg-rose-400" />
+            <span className="text-rose-500 text-sm font-medium tracking-widest uppercase">
               Work History
             </span>
-            <div className="w-8 h-px bg-amber-500" />
+            <div className="w-8 h-px bg-rose-400" />
           </div>
           <h2 className="text-3xl sm:text-4xl font-bold text-stone-900">Professional Experience</h2>
         </FadeIn>
 
         <div className="relative">
-          <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-px bg-amber-100 md:-translate-x-1/2" />
+          <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-px bg-rose-100 md:-translate-x-1/2" />
 
           <div className="space-y-10">
             {experiences.map((exp, i) => (
@@ -72,24 +72,24 @@ export default function Experience() {
                     i % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
                   }`}
                 >
-                  <div className="absolute left-4 md:left-1/2 w-3 h-3 bg-amber-500 rounded-full md:-translate-x-1/2 top-6 z-10 ring-4 ring-white" />
+                  <div className="absolute left-4 md:left-1/2 w-3 h-3 bg-rose-400 rounded-full md:-translate-x-1/2 top-6 z-10 ring-4 ring-white" />
 
                   <div
                     className={`ml-10 md:ml-0 md:w-1/2 ${
                       i % 2 === 0 ? "md:pr-14" : "md:pl-14"
                     }`}
                   >
-                    <div className="bg-white rounded-2xl p-6 shadow-sm border border-stone-200 hover:border-amber-200 hover:shadow-md transition-all">
+                    <div className="bg-white rounded-2xl p-6 shadow-sm border border-stone-200 hover:border-rose-200 hover:shadow-md transition-all">
                       <div className="flex items-start justify-between flex-wrap gap-3 mb-4">
                         <div>
                           <h3 className="font-bold text-stone-900 text-lg leading-tight">
                             {exp.role}
                           </h3>
-                          <p className="text-amber-600 font-medium mt-0.5">{exp.company}</p>
+                          <p className="text-rose-500 font-medium mt-0.5">{exp.company}</p>
                         </div>
                         <div className="text-right shrink-0">
                           <p className="text-stone-400 text-sm">{exp.period}</p>
-                          <span className="inline-block mt-1 text-xs font-semibold px-2.5 py-0.5 rounded-full bg-amber-50 text-amber-700">
+                          <span className="inline-block mt-1 text-xs font-semibold px-2.5 py-0.5 rounded-full bg-rose-50 text-rose-600">
                             {exp.type}
                           </span>
                         </div>
@@ -97,7 +97,7 @@ export default function Experience() {
                       <ul className="space-y-2">
                         {exp.points.map((point, j) => (
                           <li key={j} className="flex items-start gap-2 text-stone-600 text-sm">
-                            <span className="text-amber-500 mt-1 shrink-0 text-xs">●</span>
+                            <span className="text-rose-400 mt-1 shrink-0 text-xs">●</span>
                             {point}
                           </li>
                         ))}

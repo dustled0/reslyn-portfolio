@@ -13,8 +13,8 @@ const contacts = [
     label: "WhatsApp",
     value: "+63 966 483 3781",
     href: `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(WA_MESSAGE)}`,
-    hoverColor: "hover:border-green-500",
-    iconColor: "text-green-400",
+    hoverColor: "hover:border-green-400",
+    iconColor: "text-green-500",
     badge: "Fastest Response",
     external: true,
   },
@@ -23,8 +23,8 @@ const contacts = [
     label: "Email",
     value: "aera191421@gmail.com",
     href: "mailto:aera191421@gmail.com",
-    hoverColor: "hover:border-amber-500",
-    iconColor: "text-amber-400",
+    hoverColor: "hover:border-rose-300",
+    iconColor: "text-rose-400",
     badge: null,
     external: false,
   },
@@ -33,8 +33,8 @@ const contacts = [
     label: "Phone",
     value: "+63 966 483 3781",
     href: "tel:+639664833781",
-    hoverColor: "hover:border-emerald-700",
-    iconColor: "text-emerald-300",
+    hoverColor: "hover:border-stone-400",
+    iconColor: "text-stone-400",
     badge: null,
     external: false,
   },
@@ -49,7 +49,7 @@ const profiles = [
         <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
       </svg>
     ),
-    color: "hover:bg-blue-600",
+    color: "hover:bg-blue-500",
   },
   {
     label: "Upwork",
@@ -59,26 +59,26 @@ const profiles = [
         <path d="M18.561 13.158c-1.102 0-2.135-.467-3.074-1.227l.228-1.076.008-.042c.207-1.143.849-3.06 2.839-3.06 1.492 0 2.703 1.212 2.703 2.703-.001 1.489-1.212 2.702-2.704 2.702zm0-8.14c-2.539 0-4.51 1.649-5.31 4.366-1.22-1.834-2.148-4.036-2.687-5.892H7.828v7.112c-.002 1.406-1.141 2.546-2.547 2.546-1.405 0-2.543-1.14-2.545-2.546V3.492H0v7.112c0 2.914 2.37 5.303 5.281 5.303 2.913 0 5.283-2.389 5.283-5.303v-1.19c.529 1.107 1.182 2.229 1.974 3.221l-1.673 7.873h2.797l1.213-5.71c1.063.679 2.285 1.109 3.686 1.109 3 0 5.439-2.452 5.439-5.45 0-3-2.439-5.439-5.439-5.439z" />
       </svg>
     ),
-    color: "hover:bg-amber-600",
+    color: "hover:bg-rose-500",
   },
 ];
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-20 bg-emerald-950">
+    <section id="contact" className="py-20 bg-rose-50">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <FadeIn className="text-center mb-16">
           <div className="flex items-center justify-center gap-3 mb-4">
-            <div className="w-8 h-px bg-amber-400" />
-            <span className="text-amber-400 text-sm font-medium tracking-widest uppercase">
+            <div className="w-8 h-px bg-rose-400" />
+            <span className="text-rose-500 text-sm font-medium tracking-widest uppercase">
               Get In Touch
             </span>
-            <div className="w-8 h-px bg-amber-400" />
+            <div className="w-8 h-px bg-rose-400" />
           </div>
-          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
+          <h2 className="text-3xl sm:text-4xl font-bold text-stone-900 mb-4">
             Let&apos;s Work Together
           </h2>
-          <p className="text-emerald-300 max-w-xl mx-auto">
+          <p className="text-stone-500 max-w-xl mx-auto">
             I&apos;m open to ESL teaching roles, customer service positions, and remote
             opportunities. Feel free to reach out via any channel below.
           </p>
@@ -92,7 +92,7 @@ export default function Contact() {
                   href={c.href}
                   target={c.external ? "_blank" : undefined}
                   rel={c.external ? "noopener noreferrer" : undefined}
-                  className={`relative bg-emerald-900 border border-emerald-800 ${c.hoverColor} rounded-2xl p-6 text-center transition-all group flex flex-col items-center h-full`}
+                  className={`relative bg-white border border-stone-200 ${c.hoverColor} rounded-2xl p-6 text-center transition-all group flex flex-col items-center h-full shadow-sm`}
                 >
                   {c.badge && (
                     <span className="absolute -top-2.5 left-1/2 -translate-x-1/2 bg-green-500 text-white text-xs font-bold px-3 py-0.5 rounded-full whitespace-nowrap">
@@ -100,8 +100,8 @@ export default function Contact() {
                     </span>
                   )}
                   <div className={`mb-3 ${c.iconColor}`}>{c.icon}</div>
-                  <div className="text-emerald-500 text-xs mb-1">{c.label}</div>
-                  <div className="text-white text-sm font-medium group-hover:text-amber-400 transition-colors break-all">
+                  <div className="text-stone-400 text-xs mb-1">{c.label}</div>
+                  <div className="text-stone-800 text-sm font-medium group-hover:text-rose-500 transition-colors break-all">
                     {c.value}
                   </div>
                 </a>
@@ -130,7 +130,7 @@ export default function Contact() {
                 href={p.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={`flex items-center gap-2 bg-emerald-900 ${p.color} border border-emerald-800 text-emerald-200 hover:text-white font-medium px-5 py-2.5 rounded-xl text-sm transition-all`}
+                className={`flex items-center gap-2 bg-white ${p.color} border border-stone-200 text-stone-700 hover:text-white font-medium px-5 py-2.5 rounded-xl text-sm transition-all shadow-sm`}
               >
                 {p.icon}
                 {p.label}

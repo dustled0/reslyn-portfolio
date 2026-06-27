@@ -16,8 +16,8 @@ export default function About() {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <FadeIn>
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-8 h-px bg-amber-500" />
-              <span className="text-amber-600 text-sm font-medium tracking-widest uppercase">
+              <div className="w-8 h-px bg-rose-400" />
+              <span className="text-rose-500 text-sm font-medium tracking-widest uppercase">
                 About Me
               </span>
             </div>
@@ -38,7 +38,7 @@ export default function About() {
               {tags.map((tag) => (
                 <span
                   key={tag}
-                  className="bg-amber-50 text-amber-700 border border-amber-200 px-3 py-1 rounded-full text-sm font-medium"
+                  className="bg-rose-50 text-rose-700 border border-rose-200 px-3 py-1 rounded-full text-sm font-medium"
                 >
                   {tag}
                 </span>
@@ -49,8 +49,8 @@ export default function About() {
           <div className="grid grid-cols-2 gap-4">
             {highlights.map((item, i) => (
               <FadeIn key={item.label} delay={i * 0.08}>
-                <div className="bg-amber-50 rounded-2xl p-6 text-center border border-amber-100">
-                  <div className="text-4xl font-bold text-amber-600 mb-1">{item.number}</div>
+                <div className="bg-rose-50 rounded-2xl p-6 text-center border border-rose-100">
+                  <div className="text-4xl font-bold text-rose-500 mb-1">{item.number}</div>
                   <div className="text-stone-500 text-sm font-medium">{item.label}</div>
                 </div>
               </FadeIn>
